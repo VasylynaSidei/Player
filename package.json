@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "test": "jest --runInBand --detectOpenHandles --forceExit",
+    "start": "rm -rf dev-serve && parcel src/index.html --dist-dir dev-serve",
+    "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
+    "publish": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "puppeteer": "^19.10.1"
+  },
+  "autograding": {
+    "setup": "cd ./node_modules/puppeteer && npm run install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:VasylynaSidei/Player.git",
+    "id": 374937162
+  },
+  "homepage":"https://VasylynaSidei.github.io/Player"
+}
